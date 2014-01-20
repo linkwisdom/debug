@@ -4,5 +4,3 @@ var rst = {
     "data": null,
     "errorCode": null
 };
-
-console.dump(rst);

@@ -10,4 +10,3 @@ var data = {
     "error": {}
 };
 
-console.log(data.data);

@@ -38,5 +38,3 @@ var result = {
    },
    "errorCode": null
 }
-
-console.log(result);

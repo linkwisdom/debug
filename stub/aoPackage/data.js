@@ -12,11 +12,6 @@ define(function(require, exports, module) {
         PLANNAME: function(context, index) {
             var path = context.path;
             var param = context.param;
-
-            console.log(context);
-
-
-
             return ["上海", "北京", "深圳", "广州", param.unitid].join('-');
         },
         UNITNAME: ["最好"]

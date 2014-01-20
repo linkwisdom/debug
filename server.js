@@ -3,6 +3,12 @@ var stub = require('./stub');
 var mock = require('./mock');
 var response = {};
 
+require.config({
+    path: {
+        lib: './lib'
+    }
+});
+
 response.send = function(path, param, callback, failback) {
     var json = {};
     path && (path = path.replace(/\//g, '_'));
