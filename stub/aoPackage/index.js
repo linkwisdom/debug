@@ -4,6 +4,9 @@ define(function(require, exports, module) {
     // 扩展数据只对当前包有效
     exports.data = require('./data');
 
+    exports.GET_ao_planbudgetdetail = require('./GET_ao_planbudgetdetail');
+    exports.GET_easymanage_ignore = require('./GET_easymanage_ignore');
+
     exports.GET_nikon_abstract = {
         "status": 200,
         "data|0-9": {
