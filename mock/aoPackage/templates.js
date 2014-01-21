@@ -1,15 +1,7 @@
 define(function(require, exports) {
     var stub = require('../../stub/index');
 
-    exports.GET_nikon_abstract = function(path, param) {
-        var data = stub.get(path, param);
-        return {
-            'data': data
-        };
-    };
-
     exports.GET_nikon_detail = function(path, param) {
-        // var data = stub.get(path, param);
         var result =  {
             "status": 200,
             "data": {

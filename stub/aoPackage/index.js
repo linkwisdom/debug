@@ -6,28 +6,7 @@ define(function(require, exports, module) {
 
     exports.GET_ao_planbudgetdetail = require('./GET_ao_planbudgetdetail');
     exports.GET_easymanage_ignore = require('./GET_easymanage_ignore');
-
-    exports.GET_nikon_abstract = {
-        "status": 200,
-        "data|0-9": {
-            "aostatus|0-3": 0,
-            "absresitems|1-4": [{
-                "opttypeid|801-809": 800,
-                "status|0-3": 3,
-                "hasproblem|0-2": 0,
-                "optmd5": null,
-                "opttime": null,
-                "data": {
-                    "timestamp": "@TIMESTAMP",
-                    "category|80-89": 82,
-                    "globalId|16-16": "@LETTER_LOWER",
-                    "isnew|0-1": false
-                },
-                "compData": []
-            }]
-        },
-        "errorCode": null
-    };
+    exports.GET_nikon_abstract = require('./GET_nikon_abstract');
 
     exports.GET_nikon_detail = {
         "status": 200,
