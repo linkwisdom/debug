@@ -49,6 +49,9 @@ http.createServer(function(request, response) {
             console.log(query);
         });
     } else {
+
+        param = JSON.parse(param || "{}");
+
         send(path, param, function(result) {
             result = JSON.stringify(result, '\t', 3);
             response.end(result);

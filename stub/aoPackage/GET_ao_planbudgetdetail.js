@@ -11,7 +11,7 @@ define( function(require, exports, module) {
                "totalnum": 1,
                "returnnum": 100,
                "timestamp": "@TIMESPAN",
-               "listData|1-1": [
+               "listData": [
                     {
                          "bgttype|0-3": 1,
                          "daybgtdata": {
@@ -25,9 +25,9 @@ define( function(require, exports, module) {
                                         0,
                                         0
                                    ],
-                                   "endpoint|1-2": ["@NUMBER"],
-                                   "budgetpoint|1-1": ["@NUMBER","@NUMBER"],
-                                   "keypoints|4-4": keypoints(),
+                                   "endpoint": ["@NUMBER|122-133", "@NUMBER|122-155"],
+                                   "budgetpoint": ["@NUMBER","@NUMBER"],
+                                   "keypoints|4-4": [],
                                    "incitermsg|4-4": [
                                         [
                                              "@TIMESPAN",
@@ -36,9 +36,9 @@ define( function(require, exports, module) {
                                         ]
                                    ],
                                    "show_encourage": 1,
-                                   "model_num": 5,
-                                   "words|1-3": "@KEYWORD",
-                                   "wordids|1-5": ["@NUMBER"]
+                                   "model_num": "@NUMBER|1-10",
+                                   "words": "@KEYWORD",
+                                   "wordids|1-5": "@NUMBER|1-15"
                               }
                          },
                          "weekbgtdata": null

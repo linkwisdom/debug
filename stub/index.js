@@ -22,7 +22,7 @@ define(function(require, exports, module) {
             };
             var rst =  [];
             var length = num || 1;
-            for (var i = 0; i < num ; i++) {
+            for (var i = 0; i < length ; i++) {
                 rst.push(mc.generate(path, mc.data))
             }
             return num ? rst: rst[0];
