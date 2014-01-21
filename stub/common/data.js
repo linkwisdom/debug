@@ -19,7 +19,7 @@ define(function(require, exports, module) {
         PLANNAME: ["推广", "计划", "年中", "年末"],
         UNITNAME: ["最好"],
         MATERIA: function(context, args, pkgData) {
-            var fields = context.param.fields;
+            var fields = context.param.fields || ['wordid', 'planname', 'unitname'];
             var tpl = {};
 
             for (var i = 0; i < fields.length; i++) {
