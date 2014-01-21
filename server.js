@@ -46,7 +46,6 @@ http.createServer(function(request, response) {
             data.push(trunk);
             data = data.toString();
             var query = require('qs').parse(data);
-            console.log(query);
         });
     } else {
         send(path, param, function(result) {
